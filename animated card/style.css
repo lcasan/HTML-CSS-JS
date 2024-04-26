@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    background: #222;
+    cursor: pointer;
+    border-radius: 10px;
+    place-items: center;
+    display: grid;
+}
+
+.card::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 250px;
+    background: green;
+    border-radius: 15px;
+    z-index: -1;
+    transition: 0.3s;
+    animation: animate 2s linear infinite;
+}
+
+.card:hover::before{
+    height: 412px;
+    width: 262px;
+
+}
+
+@keyframes animate{
+    50%{
+        filter: hue-rotate(350deg);
+    }
+}
