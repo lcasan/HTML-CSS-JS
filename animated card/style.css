@@ -12,6 +12,7 @@ body{
 }
 
 .card{
+    position: relative;
     width: 250px;
     height: 400px;
     background: #222;
