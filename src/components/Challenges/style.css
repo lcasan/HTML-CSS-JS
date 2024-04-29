@@ -1,14 +1,7 @@
 .card{
-<<<<<<< HEAD:animated card/style.css
-    position: relative;
-    width: 250px;
-    height: 400px;
-    background: #222;
-=======
     height: 50%;
     width: 30%;
     background: green;
->>>>>>> eb4aef0 (Added Challenge1):src/components/Challenges/style.css
     cursor: pointer;
     border-radius: 15px;
     place-items: center;
