@@ -1,8 +1,8 @@
-import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight, SlArrowLeft, SlCallIn } from "react-icons/sl";
 
 const Button = ({icon})=>{
     return (
-        <button class="
+        <button className="
             p-1 
             text-indigo-600 
             rounded-full 
@@ -14,9 +14,9 @@ const Button = ({icon})=>{
 }
 const ContentSwitcher = ()=>{
     return (
-        <div class="flex items-center space-x-2 p-2 justify-center">
+        <div className="flex items-center space-x-2 p-2 justify-center">
             <Button icon={<SlArrowLeft/>}/>
-            <span class="text-sm text-gray-500 font-semibold">Switch challenge</span>
+            <span className="text-sm text-gray-500 font-semibold">Switch challenge</span>
             <Button icon={<SlArrowRight/>}/>
         </div>
     );

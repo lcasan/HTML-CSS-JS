@@ -1,0 +1,39 @@
+.card{
+<<<<<<< HEAD:animated card/style.css
+    position: relative;
+    width: 250px;
+    height: 400px;
+    background: #222;
+=======
+    height: 50%;
+    width: 30%;
+    background: green;
+>>>>>>> eb4aef0 (Added Challenge1):src/components/Challenges/style.css
+    cursor: pointer;
+    border-radius: 15px;
+    place-items: center;
+    display: grid;
+    transition: 0.3s;
+    animation: animate 2s linear infinite;
+}
+
+.card::before{
+    content: "";
+    background: #222;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.card:hover::before{
+    height: 90%;
+    width: 90%;
+}
+
+@keyframes animate{
+    50%{
+        filter: hue-rotate(350deg);
+    }
+}
